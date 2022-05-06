@@ -7,7 +7,7 @@ import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
 import ArrowForwardIosRoundedIcon from "@mui/icons-material/ArrowForwardIosRounded";
 import Head from "next/head";
 import { getProviders, signIn } from "next-auth/react";
-
+import Link from 'next/link';
 function Home({ providers }) {
   return (
     <div className="space-y-10 relative">
@@ -16,15 +16,17 @@ function Home({ providers }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <header className="flex justify-around items-center py-4">
-        <div className="relative w-36 h-10">
-          <Image src="https://rb.gy/vtbzlp" layout="fill" objectFit="contain" />
+      <div className="relative w-40 h-20 ">
+          <Image src="/YUV-logo.png" layout="fill" objectFit="contain" />
+           <h2 className="text-3xl text-black md:text-5xl flex-end ml-32 mt-4">YUV</h2>
+          
         </div>
         <div className="flex items-center sm:divide-x divide-gray-300">
           <div className="hidden sm:flex space-x-8 pr-4">
-            <HeaderLink Icon={ExploreIcon} text="Discover" />
-            <HeaderLink Icon={GroupIcon} text="People" />
-            <HeaderLink Icon={OndemandVideoSharpIcon} text="Learning" />
-            <HeaderLink Icon={BusinessCenterIcon} text="Jobs" />
+            <HeaderLink Icon={ExploreIcon} text="Discover" hlink="jobSearch"/>
+            <HeaderLink Icon={GroupIcon} text="People" hlink="jobSearch" />
+            <HeaderLink Icon={OndemandVideoSharpIcon} text="Learning" hlink="learning"/>
+            <HeaderLink Icon={BusinessCenterIcon} text="Jobs" hlink="jobSearch" />
           </div>
 
           {Object.values(providers).map((provider) => (

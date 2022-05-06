@@ -1,6 +1,6 @@
 module.exports= {
   images : {
     dangerouslyAllowSVG: true,
-    domains: ["rb.gy"],
+    domains: ["rb.gy","cdni.iconscout.com"],
   },
 };
