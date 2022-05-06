@@ -34,9 +34,9 @@ function Header() {
         {mounted && (
           <>
             {resolvedTheme === "dark" ? (
-              <Image src="https://rb.gy/bizvqj" width={45} height={45} />
+              <Image src="/YUV-logo-white.png" width={55} height={55} />
             ) : (
-              <Image src="https://rb.gy/dpmd9s" width={55} height={55} />
+              <Image src="/YUV-logo-white.png" width={55} height={55} />
             )}
           </>
         )}
@@ -54,8 +54,8 @@ function Header() {
 
       <div className="flex items-center space-x-6">
         <HeaderLink Icon={HomeRoundedIcon} text="Home" feed active />
-        <HeaderLink Icon={GroupIcon} text="My Network" feed />
-        <HeaderLink Icon={BusinessCenterIcon} text="Jobs" feed hidden />
+        <HeaderLink Icon={GroupIcon} text="My Network" hlink="profiles" feed />
+        <HeaderLink Icon={BusinessCenterIcon} text="Jobs" hlink="jobSearch" feed />
         <HeaderLink Icon={ChatIcon} text="Messaging" feed />
         <HeaderLink Icon={NotificationsIcon} text="Notifications" feed />
         <HeaderLink Icon={Avatar} text="Me" feed avatar hidden />

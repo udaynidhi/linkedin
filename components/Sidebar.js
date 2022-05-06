@@ -32,11 +32,11 @@ function Sidebar() {
           <div className="font-medium sidebarButton space-y-0.5">
             <div className="flex justify-between space-x-2">
               <h4>Who viewed your profile</h4>
-              <span className="text-blue-500">321</span>
+              <span className="text-blue-500">341</span>
             </div>
             <div className="flex justify-between space-x-2">
               <h4>Views of your post</h4>
-              <span className="text-blue-500">1,892</span>
+              <span className="text-blue-500">1,849</span>
             </div>
           </div>
 
