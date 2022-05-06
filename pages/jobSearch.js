@@ -27,7 +27,7 @@ const ExpandMore = styled((props) => {
 }));
 
 // export default function Home() {
-export default function jobSearch() {
+export default function JobSearch() {
 
   const [jobList, setJobList] = useState([])
   const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };

@@ -11,7 +11,7 @@ import Sidebar from "../components/Sidebar";
 import Widgets from "../components/Widgets";
 import { connectToDatabase } from "../util/mongodb";
 
-export default function profiles({users}) {
+export default function Profiles({users}) {
     const [modalOpen, setModalOpen] = useRecoilState(modalState);
   const [modalType, setModalType] = useRecoilState(modalTypeState);
   const router = useRouter();
